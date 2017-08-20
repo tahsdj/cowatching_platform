@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Coplay</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>
+	<script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+	<div id="app">
+		<div class="container">
+			<header-bar></header-bar>
+			<!--<header>
+				 <div class="ui search">
+				  <div class="ui icon input">
+				    <input class="prompt" type="text" placeholder="Search videos...">
+				  </div>
+				  <div class="results"></div>
+				</div>
+				<i class="sidebar icon"></i>
+			</header>-->
+			<screen></screen>
+			<chatboard></chatboard>
+		</div>
+
+	</div>
+	<template id="header">
+		<header>
+			<div class="ui search">
+			  <div class="ui icon input">
+			    <input class="prompt" type="text" placeholder="Search videos...">
+			  </div>
+			  <div class="results"></div>
+			</div>
+			<i class="sidebar icon"></i>
+		</header>
+	</template>
+
+	<template id="video">
+		<div id="video-container">
+			test
+		</div>
+	</template>
+	<template id="chatroom">
+		<div id="chat-container">
+			<div class="ui input">
+			  <input type="text" placeholder="say something...">
+			</div>
+		</div>
+	</template>
+	<script src="vendor.bundle.js"></script>
+	<script src="main.bundle.js"></script>
+</body>
+</html>
